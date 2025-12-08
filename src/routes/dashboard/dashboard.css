@@ -1,0 +1,15 @@
+.dashboard-container {
+    min-height: 100vh;
+    background-color: #262626;
+    color: #ffffff;
+  }
+
+  .dashboard-content {
+    margin-top: 60px;
+    margin-left: 60px;
+    padding: 20px 40px;
+  }
+
+  .sidebar:hover ~ .dashboard-content {
+    margin-left: 220px;
+  }
