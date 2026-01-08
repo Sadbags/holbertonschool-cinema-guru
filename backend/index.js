@@ -55,14 +55,14 @@ app.use('/api/titles', titlesRouter);
 app.use('/api/activity', userActivitiesRouter);
 
 app.get('/', (req, res) => {
-  res.send('Cinema Guru backend is running ✅');
+  res.send('Cinema Guru backend is running ');
 });
 
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', message: 'API is healthy' });
 });
 
-// 🔌 Initialize database and seed
+//  Initialize database and seed
 sequelize.sync({ force: false })
   .then(async () => {
     console.log('Database & tables created!');
