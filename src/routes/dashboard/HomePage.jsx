@@ -35,7 +35,6 @@ export default function HomePage() {
         });
 
         console.log("Movies from backend =>", res.data);
-        // 🔴 ici : ne garder que le tableau
         setMovies(res.data?.titles || []);
       } catch (err) {
         if (err.name !== "CanceledError") {

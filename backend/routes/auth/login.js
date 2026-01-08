@@ -3,7 +3,7 @@ import User from '../../models/User.js';
 import { comparePassword } from '../../utils/password.js';
 import { generateToken } from '../../utils/tokens.js';
 
-const router = express.Router(); // ✅ Definir el router
+const router = express.Router();
 
 router.post('/', async (req, res) => {
     try {

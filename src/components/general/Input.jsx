@@ -1,7 +1,5 @@
 // src/components/general/Input.jsx
 import { useState } from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import './general.css';
 
 function Input({
@@ -21,7 +19,6 @@ function Input({
   const handleInput = (event) => {
     let newValue = event.target.value;
 
-    // Si une fonction de validation est fournie → on l’utilise
     if (validateValue) {
       newValue = validateValue(newValue);
     }

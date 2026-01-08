@@ -2,7 +2,6 @@
 import "./movies.css";
 import Tag from "./Tag";
 
-// adapte les chemins si besoin
 import SearchBar from "../general/SearchBar";
 import SelectInput from "../general/SelectInput";
 
