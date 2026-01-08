@@ -23,5 +23,5 @@ User.belongsToMany(Title, { as: 'watchLater', through: UserWatchLater });
 Title.belongsToMany(User, { as: 'favorite', through: UserFavorites });
 Title.belongsToMany(User, { as: 'watchLater', through: UserWatchLater });
 
-// 🔹 ES Module export
+//  ES Module export
 export { Title, UserFavorites, UserWatchLater };
